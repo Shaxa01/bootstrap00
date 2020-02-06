@@ -1,0 +1,110 @@
+
+
+#first{
+    div{
+        background-color: #f1e31c !important;
+    }
+}
+
+hr{
+    background-color: #f1e31c;
+}
+
+#third{
+    a{
+        color: #f1e31c;
+        text-decoration: underline !important;
+    }
+    i{
+        font-size: 70px;
+    }
+}
+
+#fifth{
+    .img{
+        width: 370px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.781);
+        i{
+            color: #f1e31c;
+            padding-top: 70px;
+        }
+    }
+}
+
+#sixth{
+    a{
+        background-color: #f1e31c !important;
+    }
+}
+
+footer{
+    ul{
+        list-style: none;
+    }
+}
+
+@each $padding-x, $padding-y, $padding-top,$padding-right,$padding-bottom,$padding-left in px, py, pt,pr,pb,pl {
+    @for $num from 0 to 100 {  
+
+        .pt#{$padding-top}-#{$num} {
+            padding-top: #{$num}px;
+        }
+
+        .pr#{$padding-right}-#{$num} {
+            padding-right: #{$num}px;
+        }
+
+        .pb#{$padding-bottom}-#{$num} {
+            padding-bottom: #{$num}px;
+        }
+
+        .pl#{$padding-left}-#{$num} {
+            padding-left: #{$num}px;
+        }
+
+    }
+}
+
+@each $margin-top,$margin-right,$margin-bottom,$margin-left in mt,mr,mb,ml {
+    @for $num from 0 to 60 {  
+
+        .#{$margin-top}-#{$num} {
+            margin-top: #{$num}px;
+        }
+
+        .mr#{$margin-right}-#{$num} {
+            margin-right: #{$num}px;
+        }
+
+        .mb#{$margin-bottom}-#{$num} {
+            margin-bottom: #{$num}px;
+        }
+
+        .ml#{$margin-left}-#{$num} {
+            margin-left: #{$num}px;
+        }
+
+    }
+}
+
+$num: 1;
+@while $num <=101{
+    .fs-#{$num} {
+        font-size: #{$num}px;
+    }
+    $num:$num+1;
+}
+
+@media (max-width: 768px){
+
+.display-none{
+    display: none;
+}
+
+#centered-img{
+    margin-left: 40px;
+
+}
+    
+}

@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+section{
+    position: absolute;
+    top: 170px;
+    left: 400px;
+    padding: 50px;
+    background-color: #f1e31c;;
+}
